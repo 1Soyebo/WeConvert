@@ -70,7 +70,7 @@ struct ContentView: View {
                     }.pickerStyle(SegmentedPickerStyle())
                 }
                 
-                Section(header: Text("TO")){
+                Section(header: Text("To")){
                     Picker("Select", selection: $output_Unit){
                         ForEach(0..<array_conversionValues.count){
                             Text(array_conversionValues[$0])
@@ -78,12 +78,12 @@ struct ContentView: View {
                     }.pickerStyle(SegmentedPickerStyle())
                 }
                 
-                Section(header: Text("Output")){
+                Section(header: Text("Output 📐")){
                     Text("\(computed_OutPut, specifier: "%.2f")")
                 }
             }
             
-            .navigationTitle("WeConvert")
+            .navigationTitle("WeConvert 🤩")
         }
         
     }
